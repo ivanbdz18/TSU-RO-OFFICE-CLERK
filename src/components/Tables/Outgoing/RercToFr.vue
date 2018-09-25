@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'rerc-to-fr',
   props: {
@@ -36,7 +38,7 @@ export default {
     }
   },
   created: async function () {
-  await this.getDocuments()
+    await this.getDocuments()
   },
   methods: {
     proceed: async function (documentId) {
@@ -46,7 +48,7 @@ export default {
     },
     getDocuments: async function () {
       const rootApi = process.env.VUE_APP_API_ROOT
-      this.documents = (await axios.get('http://192.168.0.122:300/documents')).data
+      this.documents = (await axios.get(`${rootApi}/documents`)).data
       this.documentsState10 = this.documents.filter(d => d.state === 10 && d.received !== null)
     }
   }
