@@ -38,7 +38,7 @@ export default{
   props: {
     title: {
       type: String,
-      default: 'TSU - Research Office (Offi)'
+      default: 'TSU - Research Office'
     },
     imgLogo: {
       type: String,

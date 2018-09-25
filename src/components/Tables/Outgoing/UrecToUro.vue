@@ -2,15 +2,15 @@
   <div>
     <md-table v-model="users" :table-header-color="tableHeaderColor">
       <md-table-row class="md-body-2" slot="md-table-row" slot-scope="{ item }">
-        <md-table-cell md-label="Time Date">{{ item.time_date }}</md-table-cell>
+        <md-table-cell md-label="Time Date">{{ item.received }}</md-table-cell>
         <md-table-cell md-label="Tracking No.">{{ item.tracking_number }}</md-table-cell>
         <md-table-cell md-label="Research Title">{{ item.title }}</md-table-cell>
-        <md-table-cell md-label="Grade in Colloquium"><md-field>
-              <label>Input Grade</label>
-              <md-input v-model="item.gradeUrec" type="text"></md-input>
-          </md-field>
-        </md-table-cell>
+        <md-table-cell md-label="Authors">{{ item.authors }}</md-table-cell>
         <md-table-cell md-label="Action">
+          <md-button class="md-just-icon md-simple md-primary">
+            <md-icon>get_app</md-icon>
+            <md-tooltip md-direction="top">Download</md-tooltip>
+          </md-button>
           <md-button to="/comment" class="md-raised md-success">Comment</md-button>
           <md-button class="md-raised md-success">Proceed</md-button>
         </md-table-cell>
