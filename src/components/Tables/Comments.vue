@@ -47,12 +47,10 @@ export default {
       }
       const rootApi = process.env.VUE_APP_API_ROOT
       try {
-        await axios.post(`${rootApi}/documents/${this.$route.query.document}/state/${this.$route.query.state}/comments`, data);
+        await axios.post(`${rootApi}/documents/${this.$route.query.document}/state/${this.$route.query.state}/comments`, data)
         this.message = ''
       } catch (e) {
-        
       }
-      
     }
   }
 }

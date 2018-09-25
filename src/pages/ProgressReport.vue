@@ -9,6 +9,7 @@
     </div>
   </div>
 </template>
+
 <style>
 .md-menu-content{
   max-width: 750px !important;

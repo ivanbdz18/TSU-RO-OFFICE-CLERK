@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'drc-to-fr2',
+  name: 'urec-to-uro',
   props: {
     tableHeaderColor: {
       type: String,
