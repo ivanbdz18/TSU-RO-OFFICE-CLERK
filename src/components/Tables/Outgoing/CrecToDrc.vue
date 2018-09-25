@@ -30,18 +30,7 @@ export default {
       selected: [],
       documents: [],
       documentsState4: [],
-      users: [
-        {
-          time_date: null,
-          tracking_number: null,
-          title: null
-        },
-        {
-          time_date: null,
-          tracking_number: null,
-          title: null
-        }
-      ]
+
     }
   },
   created: async function () {
