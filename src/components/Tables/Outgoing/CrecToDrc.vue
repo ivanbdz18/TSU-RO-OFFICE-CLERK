@@ -30,18 +30,7 @@ export default {
       selected: [],
       documents: [],
       documentsState4: [],
-      users: [
-        {
-          time_date: null,
-          tracking_number: null,
-          title: null
-        },
-        {
-          time_date: null,
-          tracking_number: null,
-          title: null
-        }
-      ]
+
     }
   },
   created: async function () {
@@ -57,7 +46,7 @@ export default {
       const rootApi = process.env.VUE_APP_API_ROOT
       this.documents = (await axios.get(`${rootApi}/documents`)).data
       this.documentsState4 = this.documents.filter(d => d.state === 4 && d.received !== null)
-    },
+    }
   }
 }
 </script>
