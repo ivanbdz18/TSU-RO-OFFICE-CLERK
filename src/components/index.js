@@ -13,7 +13,7 @@ import TrackTable from './Tracking/TrackTable.vue'
 import ResFromFr from './Tables/Ingoing/ResFromFr.vue'
 import ResFromFr2 from './Tables/Ingoing/ResFromFr2.vue'
 import ResFromFr3 from './Tables/Ingoing/ResFromFr3.vue'
-import ResFromUro from './Tables/Ingoing/ResFromUro.vue'
+import ResFromOup from './Tables/Ingoing/ResFromOup.vue'
 import CrecToDrc from './Tables/Outgoing/CrecToDrc.vue'
 import OupToUro from './Tables/Outgoing/OupToUro.vue'
 import RercToFr from './Tables/Outgoing/RercToFr.vue'
@@ -34,7 +34,7 @@ export {
   ResFromFr,
   ResFromFr3,
   ResFromFr2,
-  ResFromUro,
+  ResFromOup,
   CrecToDrc,
   OupToUro,
   RercToFr,

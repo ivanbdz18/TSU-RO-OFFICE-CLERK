@@ -41,7 +41,7 @@
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
-            <res-from-uro class="md-body-2" table-header-color="orange"></res-from-uro>
+            <res-from-oup class="md-body-2" table-header-color="orange"></res-from-oup>
           </md-card-content>
         </md-card>
       </div>
@@ -54,7 +54,7 @@ import {
   ResFromFr,
   ResFromFr2,
   ResFromFr3,
-  ResFromUro
+  ResFromOup
 } from '@/components'
 
 export default{
@@ -62,7 +62,7 @@ export default{
     ResFromFr,
     ResFromFr2,
     ResFromFr3,
-    ResFromUro
+    ResFromOup
   },
   data () {
     return {
